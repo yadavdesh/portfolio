@@ -1,0 +1,276 @@
+
+
+/* index.html css */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  /*background-color: #fffeea;*/
+  color: #34495e;
+}
+
+
+.container-fluid{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  padding-top: 3em;
+
+}
+
+header{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+
+
+.carousel-caption h1,p{
+  color: #0e0e0f;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.carousel-caption p{
+  font-size: 1.5em;
+}
+
+
+
+
+.about{
+
+margin-right: 20px;
+
+}
+
+
+
+
+
+
+        /* about.css */
+
+
+
+
+
+.main-text{
+  padding-top: 60px;
+  clear: both;
+  display:block;
+}
+
+/*Image section formating*/
+.image{
+  background-color: #FFF;
+  padding: 2em 0;
+}
+
+.image img{
+  width: 100%;
+  border-style: hidden;
+
+}
+
+/* head lines text font */
+h1,
+h2, h3 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+/* Introduction section's fonts*/
+.intro{
+padding: 2em;
+
+
+}
+
+.intro p{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+  float: left;
+}
+
+/* skill section */
+.skill{
+  background-color: #5AD4C2;
+  color: #FFF;
+  padding: 2em 0;
+}
+
+/* Skills section formating*/
+.skill h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+
+}
+
+/*UL formating*/
+#skill-list{
+  margin-left: 50px;
+  font-size: 30PX;
+}
+
+main-text p{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+
+
+
+
+
+
+nav li a:hover{
+  color: #fc0 !important;
+  opacity: 0.7 !important;
+  text-decoration: none !important;
+}
+
+
+
+
+
+      /* contact.css*/
+
+
+
+body{
+    background-image: url("../img/background.jpg"); /*Add a background image*/
+    padding-top: 50px 100px 100px 100px;
+    background-attachment: fixed; /*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover; /*Have the background cover the entire div section*/
+    color: blue; /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+
+  }
+
+
+
+.description{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+
+a{
+  font-size: 1.2em;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  padding: 20px
+}
+
+
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.email{
+  font-size: 1.2em;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  padding: 0;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin: 20px;
+  }
+
+.fa-linkedin {
+    background: #0e76a8;
+    color: white;
+    margin: 20px;
+  }
+
+.fa-xing {
+    background: #026466;
+    color: white;
+    margin: 20px;
+    }
+
+.fa-github {
+    background: #4078c0;
+    color: white;
+    margin: 20px;
+    }
+
+
+
+
+    /* FAQ page CSS*/
+
+.card-header {
+  background: #5AD4C2;
+}
+
+.card-header button {
+  color: #FFF;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+.card-header button:hover {
+  text-decoration: none;
+}
+.card-header button:focus{
+  text-decoration: none;
+}
+
+.card-body {
+  font-size: 19px;
+}
+
+@media (max-width: 576px) {
+  body {
+    background: #f48f42;
+  }
+}
+
+@media (max-width: 576px) {
+  .fa-angle-double-right {
+    font-size: 10px;
+  }
+}
+
+.work_img{
+  margin: 10px;
+}
+
+.navbar-brand {
+   text-transform:uppercase;
+   padding:8px;
+
+ }
+
+a.navbar-brand {
+  color: blue !important;
+}
+
+
+.content {
+  padding-top: 70px;
+}
+
+.work-description{
+  text-align: center;
+  font-family: sans-serif serif,fantasy;
+  font-size: 1em;
+  text-decoration: none !important;
+  color: blue;
+}
