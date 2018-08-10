@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!--twitter script-->
-    <script async src="https://platform.twitter.com/widgets.js"></script>
     <title>Desh Bhrdwaj</title>
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -27,39 +25,18 @@
   </head>
   <body data-spy="scroll" data-target="#navbar-example">
 
-    <!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '350437675496373',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v3.1'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
     <!--navbar starts here-->
     <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark fixed-top " id="navbar-example">
-      <nav class="left">
+      <div class="left">
         <a class="nav navbar-brand" href="#">
           <img alt="brand" src="img/logo.png">
         </a>
-        <nav class="navbar-toggler " data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <nav class="navbar-toggler-icon"></nav>
-        </nav>
-      </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars fa-1x"></span>
+        </button>
+      </div>
 
-        <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link active" href="#carouselExampleIndicators">Home <span class="sr-only">(current)</span></a>
@@ -77,7 +54,7 @@
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </nav> <!-- end nav container -->
 
 
@@ -307,7 +284,7 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
                 <i class="fas fa-angle-double-right"> Do you have german work permit?</i>
               </button>
             </h5>
@@ -321,35 +298,8 @@
       </div> <!-- end of Accordion-->
     </div> <!-- end of FAQ div-->
     <footer>
-      <div class="youtube embed-responsive embed-responsive-16by9">
-        <iframe width="400" height="250"
-          src="https://www.youtube.com/embed/UR_yCO7-aIU"
-          frameborder="1" allow="autoplay; encrypted-media"
-          allowfullscreen>
-        </iframe>
-      </div>
-      <div class="social">
-        <div class="twitter">
-          <a href="https://twitter.com/deshyadav?ref_src=twsrc%5Etfw"
-          class="twitter-follow-button" data-show-count="true"
-          target="_blank">Follow @deshyadav</a>
-        </div>
-        <!--
-        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FWildlifeExpeditionsIndia%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId=350437675496373"
-          width="450" height="80"
-          style="border:none;overflow:hidden"
-          scrolling="no" frameborder="0" allowTransparency="true"
-          allow="encrypted-media">
-        </iframe> -->
-
-        <div class="fb-like" data-href="https://www.facebook.com/WildlifeExpeditionsIndia/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-
-      </div> <!-- end of social div-->
-
-      <div class="copy">&copy; Desh Bhardwaj 2018</div>
+      <div>&copy; Desh Bhardwaj 2018</div>
     </footer>
-
-
 
 
     <!-- ============================= -->
