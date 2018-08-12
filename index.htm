@@ -85,7 +85,7 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <div class="carousel-caption d-none d-md-block">
             <h1>Desh Bhardwaj</h1>
-            <p>A passionate self taught web developer with 4+ years of experience in software testing. I enjoy learning new technologies and solving problems. I am looking for a new career opportunity in the field of web development.</p>
+            <p>A passionate self-taught web developer with 4+ years of experience in software testing. I enjoy learning new technologies and solving problems. I am looking for a new career opportunity in the field of web development.</p>
           </div>
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -119,13 +119,13 @@
         <div class="row">
           <div class="col-sm">
             <h2>Portfolio Concept</h2>
-            <p> I have 4+ years of work experience in software testing and also I have some exposure of agile scrum and kanban practice. </p>
-            <a class="btn btn-primary" href="#" role="button"> View details &raquo;</a>
+            <p> I have 4+ years of work experience in software <a href="#" id="item1" pla title="Manual and automation testing" data-placement="top">testing</a> and also I have some exposure of agile scrum and kanban practice. </p>
+            <a class="btn btn-primary" href="#" role="button" > View details &raquo;</a>
           </div> <!--col -->
           <div class="col-sm">
             <h2>Project Goals</h2>
             <p>Project Goals: I will complete CF learning project by end 7th Octorber and to achieve My goal I will study 9 hours every day.</p>
-            <a class="btn btn-primary" href="#" role="button"> View details &raquo;</a>
+            <a class="btn btn-primary" href="#" role="button" data-toggle="tooltip1" title="Make my portfolio impressive and full of projects" data-placement="bottom"> View details &raquo;</a>
           </div> <!--col -->
 
           <div class="col-sm">
@@ -423,5 +423,19 @@
 
     <!-- Can place script tags with JavaScript files here -->
     <script src="js/bootstrap.js"></script>
+
+<!--script for tooltip implementation -->
+    <script>
+      $(function () {
+      $('#item1').tooltip();
+      });
+    </script>
+
+    <script>
+  $(function () {
+    $('[data-toggle="tooltip1"]').tooltip();
+  });
+</script>
+
   </body>
 </html>
