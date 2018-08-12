@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 var $root = $('html, body');
 $('#navbar-example a').click(function() {
 var href = $.attr(this, 'href');
@@ -11,4 +11,3 @@ if (href != undefined && href != '#') {
 }
 return false;
 });
-</script>

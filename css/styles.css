@@ -24,6 +24,7 @@ header{
   font-family: Futura, Helvetica, Arial, sans-serif;
   font-size: 2em;
   margin-bottom: 1em;
+
 }
 
 
@@ -260,6 +261,12 @@ a{
   }
 }
 
+@media (min-width: 768px) {
+  .modal-button button {
+    float: right;
+  }
+}
+
 .work_img{
   margin: 10px;
 }
@@ -285,6 +292,16 @@ a.navbar-brand {
   font-size: 1em;
   text-decoration: none !important;
   color: blue;
+}
+
+/* modal box*/
+#deshcv{
+  height: 500px;
+  width: 100%;
+}
+
+.cv{
+  margin-top: 1em;
 }
 
 /*footer*/
