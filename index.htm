@@ -252,22 +252,47 @@
 
 
     <div class="container-fluid content" id="contact">
-      <header> Contact</header>
-      <div class="contact-info">
-        <p class="description">I am eager to learn new skills and technologies as I believe learning is an unending process. <br> If my portfolio interests you, Please feel free to get in touch with me.</p>
-        <a class="email" href="mailto:bhardwajdesh@gmail.com"><i class="fas fa-envelope"> bhardwajdesh@gmail.com</i> </a>
-        <p class="address">
-          <i class="fas fa-address-card"> Am Steinberg 4, 13086 Berlin</i>
-        <br>
-          <i class="fas fa-mobile-alt"> +4917645936837</i>
-        </p>
-      </div> <!--end of contact info-->
-      <div class="social col-sm">
-        <a href="https://www.facebook.com/desh.yadav" class="fa fa-facebook"></a>
-        <a href="https://www.linkedin.com/in/desh-y-45237211/" class="fa fa-linkedin"></a>
-        <a href="https://www.xing.com/profile/Desh_Bhardwaj/cv?sc_o=mxb_p" class="fa fa-xing"></a>
-        <a href="https://github.com/yadavdesh" class="fa fa-github"></a>
-      </div> <!-- end of social media -->
+      <header> Contact Me</header>
+      <div class="row">
+        <div class="col-sm-6">
+          <a class="email" href="mailto:bhardwajdesh@gmail.com"><i class="fas fa-envelope"> bhardwajdesh@gmail.com</i> </a>
+          <p class="address">
+            <i class="fas fa-address-card"> Am Steinberg 4, 13086 Berlin</i>
+            <br>
+            <i class="fas fa-mobile-alt"> +4917645936837</i>
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/desh.yadav" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/desh-y-45237211/" class="fa fa-linkedin"></a>
+            <a href="https://www.xing.com/profile/Desh_Bhardwaj/cv?sc_o=mxb_p" class="fa fa-xing"></a>
+            <a href="https://github.com/yadavdesh" class="fa fa-github"></a>
+          </div> <!-- end of social media -->
+        </div> <!--end of contact info-->
+        <!-- Contact Form -->
+        <div class="col-sm-6>">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input class="form-control" type="text" name="name" placeholder="Enter your Name" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone"> Phone (optional)</label>
+              <input class="form-control" type="number" name="phone" placeholder="Enter your phone no" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="email"> Email</label>
+              <input class="form-control" type="email" name="email" placeholder="Your email here" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message"> Message</label>
+              <textarea class="form-control"  minlength="50" style="resize:none" cols="40" rows="5" placeholder="Your message here" id="message"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit" id="button">Submit</button>
+            </div>
+          </form>
+        </div> <!--end of form grid-->
+      </div><!--end of contact grid-->
     </div> <!-- end of Contact div-->
 
     <!-- FAQ div-->

@@ -23,7 +23,7 @@ body {
 header{
   font-family: Futura, Helvetica, Arial, sans-serif;
   font-size: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 
@@ -162,17 +162,13 @@ body{
 
 
 
-.description{
-  font-family: Futura, Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
-}
-
-
 a{
   font-size: 1.2em;
   font-family: Futura, Helvetica, Arial, sans-serif;
   padding: 20px
 }
+
+
 
 
 
@@ -198,25 +194,32 @@ a{
 .fa-facebook {
     background: #3B5998;
     color: white;
-    margin: 20px;
+
   }
 
 .fa-linkedin {
     background: #0e76a8;
     color: white;
-    margin: 20px;
+    margin-left: 5px;
   }
 
 .fa-xing {
     background: #026466;
     color: white;
-    margin: 20px;
+    margin-left: 5px;
     }
 
 .fa-github {
     background: #4078c0;
     color: white;
-    margin: 20px;
+    margin-left: 5px;
+
+    }
+
+    @media (max-width: 576px) {
+      .form-group {
+        margin-top:30px;
+      }
     }
 
 
@@ -293,9 +296,7 @@ a.navbar-brand {
   color: #fc0;
 }
 
-.social{
-  margin: 1em;
-}
+
 .copy{
   text-align: center;
 }
