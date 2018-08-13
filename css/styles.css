@@ -2,321 +2,252 @@
 
 /* index.html css */
 *{
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
-body {
-  position: relative;
-  /*background-color: #fffeea;*/
-  color: #34495e;
+body{
+  background-image:url("../img/background.jpg");
+  padding-top:50px 100px 100px 100px;
+  background-attachment:fixed;
+  background-size:cover;
+  color:blue;
+  position:relative;
 }
-
 
 .container-fluid{
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  padding-top: 3em;
-
+  margin-left:10%;
+  margin-right:10%;
+  width:80%;
+  padding-top:3em;
 }
 
 header{
-  font-family: Futura, Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  margin-bottom: 1em;
-
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  font-size:2em;
+  margin-bottom:1em;
 }
 
-
-
-.carousel-caption h1,p{
-  color: #0e0e0f;
-  font-family: Futura, Helvetica, Arial, sans-serif;
+.carousel-caption h1, p{
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  color:#0e0e0f;
 }
 
 .carousel-caption p{
-  font-size: 1.5em;
+  font-size:1.5em;
+
 }
-
-
-
 
 .about{
-
-margin-right: 20px;
-
+  margin-right:20px;
 }
 
-
-
-
-
-
-        /* about.css */
-
-
-
-
+/* about.css */
 
 .main-text{
-  padding-top: 60px;
-  clear: both;
+  padding-top:60px;
+  clear:both;
   display:block;
 }
 
-/*Image section formating*/
-.image{
-  background-color: #FFF;
-  padding: 2em 0;
+
+.about-image{
+  background-color:#FFF;
+  padding:2em 0;
 }
 
-.image img{
-  width: 100%;
-  border-style: hidden;
-
+.about-image img{
+  width:100%;
+  border-style:hidden;
 }
 
-/* head lines text font */
-h1,
-h2, h3 {
-  font-family: Futura, Helvetica, Arial, sans-serif;
+h1,h2, h3 {
+  font-family:Futura, Helvetica, Arial, sans-serif;
 }
 
-/* Introduction section's fonts*/
-.intro{
-padding: 2em;
-
-
+.abount-intro{
+  padding:2em;
 }
 
-.intro p{
-  font-family: Futura, Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 100;
-  -webkit-margin-before: 0;
-  float: left;
+.about-intro p{
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  font-size:2em;
+  font-weight:100;
+  -webkit-margin-before:0;
+  float:left;
 }
 
-/* skill section */
-.skill{
-  background-color: #5AD4C2;
-  color: #FFF;
-  padding: 2em 0;
+.about-skill{
+  background-color:#5AD4C2;
+  color:#FFF;
+  padding:2em 0;
 }
 
-/* Skills section formating*/
-.skill h3{
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Futura, Helvetica, Arial, sans-serif;
-
+.about-skill h3{
+  text-align:center;
+  text-transform:uppercase;
 }
 
-/*UL formating*/
 #skill-list{
-  margin-left: 50px;
-  font-size: 30PX;
+  margin-left:50px;
+  font-size:30PX;
 }
 
-main-text p{
-  font-family: Futura, Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
+.about-story{
+  margin-top: 1em;
 }
 
-
-
-
-
-
-
-
+.about-story p{
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  font-size:1.3em;
+}
 
 .navbar-toggler{
-  text-decoration: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: 0 !important;
+  text-decoration:none !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
 }
 
 nav li a:hover{
-  color: #fc0 !important;
-  opacity: 0.7 !important;
-  text-decoration: none !important;
+  color:#fc0 !important;
+  opacity:0.7 !important;
+  text-decoration:none !important;
 }
 
-
-
-
-
-      /* contact.css*/
-
-
-
-body{
-    background-image: url("../img/background.jpg"); /*Add a background image*/
-    padding-top: 50px 100px 100px 100px;
-    background-attachment: fixed; /*Give the background a fixed position does it not scroll when you scroll*/
-    background-size: cover; /*Have the background cover the entire div section*/
-    color: blue; /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
-
-  }
-
-
-/*
-a{
-  font-size: 1.2em;
-  font-family: Futura, Helvetica, Arial, sans-serif;
-  padding: 20px
-}
-*/
-
-
-
-
-
-.fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 60px;
-    text-align: center;
-    text-decoration: none;
-
+.fa{
+  padding:5px;
+  font-size:30px;
+  width:60px;
+  text-align:center;
+  text-decoration:none;
+  color:white;
 }
 
 .email{
-  font-size: 1.2em;
-  font-family: Futura, Helvetica, Arial, sans-serif;
-  padding: 0;
+  font-size:1.2em;
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  padding:0;
 }
 
-.fa:hover {
-    opacity: 0.7;
+.fa:hover{
+  opacity:0.7;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.fa-facebook{
+  background:#3B5998;
+}
 
+.fa-linkedin{
+  background:#0e76a8;
+  margin-left:5px;
+}
+
+.fa-xing{
+  background:#026466;
+  margin-left:5px;
+}
+
+.fa-github{
+  background:#4078c0;
+  color:white;
+  margin-left:5px;
+}
+
+@media(max-width:576px){
+  .form-group{
+    margin-top:30px;
   }
-
-.fa-linkedin {
-    background: #0e76a8;
-    color: white;
-    margin-left: 5px;
-  }
-
-.fa-xing {
-    background: #026466;
-    color: white;
-    margin-left: 5px;
-    }
-
-.fa-github {
-    background: #4078c0;
-    color: white;
-    margin-left: 5px;
-
-    }
-
-    @media (max-width: 576px) {
-      .form-group {
-        margin-top:30px;
-      }
-    }
-
-
-
-
-    /* FAQ page CSS*/
-
-.card-header {
-  background: #5AD4C2;
 }
 
-.card-header button {
-  color: #FFF;
-  font-size: 25px;
-  text-decoration: none;
-  font-family: Futura, Helvetica, Arial, sans-serif;
+/* FAQ page CSS*/
+.card-header{
+  background:#5AD4C2;
 }
-.card-header button:hover {
-  text-decoration: none;
+
+.card-header button{
+  color:#FFF;
+  font-size:25px;
+  text-decoration:none;
+  font-family:Futura, Helvetica, Arial, sans-serif;
 }
+
+.card-header button:hover{
+  text-decoration:none;
+}
+
 .card-header button:focus{
-  text-decoration: none;
+  text-decoration:none;
 }
 
-.card-body {
-  font-size: 19px;
+.card-body{
+  font-size:19px;
 }
 
-@media (max-width: 576px) {
-  body {
+@media(max-width:576px){
+  body{
     background: #f48f42;
   }
 }
 
-@media (max-width: 576px) {
-  .fa-angle-double-right {
+@media(max-width:576px){
+  .fa-angle-double-right{
     font-size: 10px;
   }
 }
 
-@media (min-width: 768px) {
-  .modal-button button {
+@media(min-width:768px){
+  .modal-button button{
     float: right;
   }
 }
 
 .work_img{
-  margin: 10px;
+  margin:0px;
 }
 
-.navbar-brand {
-   text-transform:uppercase;
-   padding:8px;
+.navbar-brand{
+  text-transform:uppercase;
+  padding:8px;
+}
 
- }
-
-a.navbar-brand {
-  color: blue !important;
+a.navbar-brand{
+  color:blue !important;
 }
 
 
-.content {
-  padding-top: 70px;
+.content{
+  padding-top:70px;
 }
 
 .work-description{
-  text-align: center;
-  font-family: sans-serif serif,fantasy;
-  font-size: 1em;
-  text-decoration: none !important;
-  color: blue;
+  text-align:center;
+  font-family:sans-serif serif,fantasy;
+  font-size:1em;
+  text-decoration:none !important;
+  color:blue;
 }
 
 /* modal box*/
 #deshcv{
-  height: 500px;
-  width: 100%;
+  height:500px;
+  width:100%;
 }
 
 .cv{
-  margin-top: 1em;
+  margin-top:1em;
 }
 
 /*footer*/
-.footer a:active {
-  color: #ff0000;
+.footer a:active{
+  color:#ff0000;
 }
 
-.footer a:visited {
-  color: #fc0;
+.footer a:visited{
+  color:#fc0;
 }
-
 
 .copy{
-  text-align: center;
+  text-align:center;
 }
 
 footer{
