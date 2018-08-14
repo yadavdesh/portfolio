@@ -26,26 +26,28 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#navbar-example">
+  <!--Load Facebook SDK for JavaScript-->
+  <div id="fb-root"></div>
 
-    <!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
+facebook sdk and function
+  <script>
   window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '350437675496373',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v3.1'
-    });
+  FB.init({
+    appId            : '350437675496373',
+    autoLogAppEvents : true,
+    xfbml            : true,
+    version          : 'v3.1'
+  });
   };
 
   (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "https://connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
 </script>
 
     <!--navbar starts here-->
@@ -141,27 +143,25 @@
 
 
       <div class="container-fluid content" id="about">
-          <header>About Me</header>
-          <div class="row">
+          <header><strong>About Me</strong></header>
+          <div class="row" id="about-section">
             <div class="about-image col-sm-4">
-              <img src="img/about.jpg" alt="cover_pic" class="img-fluid">
+              <img id="about-img" src="img/about.jpg" alt="cover_pic" class="img-fluid">
             </div> <!-- end image-->
             <div class="about-intro col-sm-4">
-              <h2><strong>Who am I</strong></h2>
+              <h2>Who am I</h2>
                 <p>A passionate web developer with some testing experience, seeking an opportunity in web development.</p>
               </div> <!-- intro end -->
               <div class="about-skill col-sm-4">
-                <h3><strong>My Skills</strong></h3>
-                <ul id="skill-list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>JavaScript, </li>
-                  <li>jQuery</li>
-                  <li>Ruby</li>
-                  <li>Rails</li>
-                </ul>
-              </div> <!-- end skill-->
+                <h3>My Skills</h3>
+                <div class="container">
+                  <div class="skills skills-html">html & html5</div>
+                  <div class="skills skills-css">CSS & CSS3</div>
+                  <div class="skills skills-css">Bootstrap</div>
+                  <div class="skills skills-js">JavaScript & jquery</div>
+                  <div class="skills skills-ruby">Ruby & Rails</div>
+                </div>
+              </div>
             </div> <!--end of row-->
 
             <div class="about-story">
@@ -174,7 +174,7 @@
       <!-- Projects -->
 
       <div class="container-fluid content" id="projects">
-        <header>Projects</header>
+        <header><strong>Projects</strong></header>
         <div class="row col-md-12" id="work">
             <div class = "col-md-3 work_img">
               <a href="calculator/index.html">
@@ -243,7 +243,7 @@
 
 
     <div class="container-fluid content" id="contact">
-      <header> Contact Me</header>
+      <header><strong>Contact Me</strong></header>
       <div class="row">
         <div class="col-sm-6">
           <a class="email" href="mailto:bhardwajdesh@gmail.com"><i class="fas fa-envelope"> bhardwajdesh@gmail.com</i> </a>
@@ -276,8 +276,10 @@
             </div>
             <div class="form-group">
               <label for="message"> Message</label>
-              <textarea class="form-control"  minlength="50" style="resize:none" cols="40" rows="5" placeholder="Your message here" id="message"></textarea>
+              <textarea class="form-control"  minlength="5" style="resize:none" cols="40" rows="5" placeholder="Your message here" id="message"></textarea>
+              <p id="visible-comment"></p>
             </div>
+            
             <div class="form-group">
               <button class="btn btn-primary" type="submit" id="button">Submit</button>
             </div>
@@ -289,7 +291,7 @@
     <!-- FAQ div-->
 
     <div class="container-fluid content" id="faq">
-      <header> FAQ </header>
+      <header><strong>FAQ</strong></header>
       <div id="acordion">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -392,7 +394,9 @@
           allow="encrypted-media">
         </iframe> -->
 
-        <div class="fb-like" data-href="https://www.facebook.com/WildlifeExpeditionsIndia/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        <div class="fb-like" data-href="https://www.facebook.com/WildlifeExpeditionsIndia/"
+        data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+        </div>
 
       </div> <!-- end of social div-->
 
@@ -400,33 +404,21 @@
     </footer>
 
 
-
-
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
     <!-- ============================= -->
 
     <!-- Bootstrap core JS -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <!-- Can place script tags with JavaScript files here -->
-    <script src="js/bootstrap.js"></script>
-
-<!--script for tooltip implementation -->
-    <script>
-      $(function () {
-      $('#item1').tooltip();
-      });
-    </script>
-
-    <script>
-  $(function () {
-    $('[data-toggle="tooltip1"]').tooltip();
-  });
-</script>
+    <!-- Can place script tags with JavaScriptfiles here -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>

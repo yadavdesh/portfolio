@@ -3,10 +3,11 @@
 /* index.html css */
 *{
   box-sizing:border-box;
+
 }
 
 body{
-  background-image:url("../img/background.jpg");
+  background-image: url("../img/background.jpg");
   padding-top:50px 100px 100px 100px;
   background-attachment:fixed;
   background-size:cover;
@@ -24,7 +25,9 @@ body{
 header{
   font-family:Futura, Helvetica, Arial, sans-serif;
   font-size:2em;
-  margin-bottom:1em;
+  margin-bottom:2em;
+  color:steelblue;
+  text-align:center;
 }
 
 .carousel-caption h1, p{
@@ -37,9 +40,15 @@ header{
 
 }
 
-.about{
+#about{
   margin-right:20px;
 }
+
+#about-img{
+  border-radius:100%;
+  width:40%;
+}
+
 
 /* about.css */
 
@@ -49,19 +58,8 @@ header{
   display:block;
 }
 
-
-.about-image{
-  background-color:#FFF;
-  padding:2em 0;
-}
-
-.about-image img{
-  width:100%;
-  border-style:hidden;
-}
-
 h1,h2, h3 {
-  font-family:Futura, Helvetica, Arial, sans-serif;
+  color:#0d3344;
 }
 
 .abount-intro{
@@ -70,16 +68,10 @@ h1,h2, h3 {
 
 .about-intro p{
   font-family:Futura, Helvetica, Arial, sans-serif;
-  font-size:2em;
+  font-size:1em;
   font-weight:100;
   -webkit-margin-before:0;
   float:left;
-}
-
-.about-skill{
-  background-color:#5AD4C2;
-  color:#FFF;
-  padding:2em 0;
 }
 
 .about-skill h3{
@@ -87,9 +79,12 @@ h1,h2, h3 {
   text-transform:uppercase;
 }
 
-#skill-list{
-  margin-left:50px;
-  font-size:30PX;
+.skills{
+  background-color:#276c8c;
+  margin-top:10px;
+  color:#FFF;
+  font-size:1em;
+
 }
 
 .about-story{
@@ -98,7 +93,7 @@ h1,h2, h3 {
 
 .about-story p{
   font-family:Futura, Helvetica, Arial, sans-serif;
-  font-size:1.3em;
+  font-size:1em;
 }
 
 .navbar-toggler{
@@ -207,13 +202,9 @@ nav li a:hover{
 
 .navbar-brand{
   text-transform:uppercase;
-  padding:8px;
+  padding:0 !important;
+  font-size:1em !important;
 }
-
-a.navbar-brand{
-  color:blue !important;
-}
-
 
 .content{
   padding-top:70px;
