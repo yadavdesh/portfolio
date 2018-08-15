@@ -36,27 +36,40 @@ if (href != undefined && href != '#') {
 return false;
 });
 
-// tooltip implementation --
-
-$(function () {
+  // tooltip implementation --
   $('#item1').tooltip();
-});
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-
-  // function to change texarea background color
-  $('#message').css('background-color', 'pink');
+  $('[data-toggle="tooltip"]').tooltip();
 
 // function for form button click
-$('#button').on('click', function() {
-    var comment = $('#message').val();
-    $('#visible-comment').html(comment);
-    $('#message').hide();
+  $('#button').on('click', function() {
+    var comment=$('#message').val();
+    if(comment ===""){
+      $('#message').css('border-color','red');
+    }
+    else {
+      $('#visible-comment').html(comment);
+      $('#message').hide();
+      console.log(comment)
+      return false;
+    }
+  });
 
+  //function to count word in text texarea
+  $('#message').on('keyup', function(){
+    var char_count = $('#message').val().length;
+    $('#visible-comment').html('Total Char:'+char_count);
+    if(char_count > 50) {
+      $('#visible-comment').css('color','red');
+    }
+    else{
+      $('#visible-comment').css('color','steelblue');
+    }
+    console.log(char_count);
     return false;
-});
+  });
+
+
 
 
 });
