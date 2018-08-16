@@ -1,20 +1,34 @@
+/*
 var projects = [
   "img/calculator.jpg",
   "img/kitty.jpg",
   "img/kitty.jpg",
   "img/kitty.jpg"
 ];
+*/
 
-var projects_name = [
-  "Calculator",
-  "Sample Project",
-  "Sample Project",
-  "Sample Project"
-]
 
-var projects_url=[
-  "calculator/index.html",
-  "#",
-  "#",
-  "#"
-]
+
+
+var projects = [
+  {
+    title: "Calculator",
+    pic: "img/calculator.jpg",
+    url: "calculator/index.html"
+  },
+  {
+    title: "Coming Soon",
+    pic: "img/kitty.jpg",
+    url:"#"
+  },
+  {
+    title: "Coming Soon",
+    pic: "img/kitty.jpg",
+    url:"#"
+  },
+  {
+    title: "Coming Soon",
+    pic: "img/kitty.jpg",
+    url:"#"
+  }
+];
