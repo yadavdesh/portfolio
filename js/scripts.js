@@ -69,6 +69,24 @@ return false;
     return false;
   });
 
+  //Projects section
+  for(var i =0; i<projects.length; i++) {
+    $('#work').append('\
+    <div class="col-md-3 work_img">\
+      <a href="'+projects_url[i]+'">\
+        <img src="'+projects[i]+'" alt="'+projects_name[i]+'" class="img-fluid">\
+        <p class="work-description">'+projects_name[i]+'</p>\
+      </a>\
+    </div>');
+
+    var images = $('#work img');
+    if(i%2 === 0){
+      $(images[i]).css("border", "2px solid red");
+    }
+    else{
+      $(images[i]).css("border", "2px solid steelblue");
+    };
+};
 
 
 
