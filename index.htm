@@ -85,9 +85,21 @@ facebook sdk and function
 
       <div class="container-inner">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block responsive">
             <h1>Desh Bhardwaj</h1>
-            <p>A passionate self-taught web developer with 4+ years of experience in software testing. I enjoy learning new technologies and solving problems. I am looking for a new career opportunity in the field of web development.</p>
+            <p>A passionate self-taught web developer with 4+ years of web development and testing experience. I enjoy learning new technologies and solving problems.</p>
+            <a class="email" href="mailto:bhardwajdesh@gmail.com"><i class="fas fa-envelope"> bhardwajdesh@gmail.com</i> </a>
+            <p class="address">
+              <i class="fas fa-address-card"> Am Steinberg 4, 13086 Berlin</i>
+              <br>
+              <i class="fas fa-mobile-alt"> +4917645936837</i>
+            </p>
+            <div class="social">
+              <a href="https://www.facebook.com/desh.yadav" class="fa fa-facebook"></a>
+              <a href="https://www.linkedin.com/in/desh-y-45237211/" class="fa fa-linkedin"></a>
+              <a href="https://www.xing.com/profile/Desh_Bhardwaj/cv?sc_o=mxb_p" class="fa fa-xing"></a>
+              <a href="https://github.com/yadavdesh" class="fa fa-github"></a>
+            </div> <!-- end of social media -->
           </div>
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -248,22 +260,17 @@ facebook sdk and function
       <header><strong>Contact Me</strong></header>
       <div class="row">
         <div class="col-sm-6">
-          <a class="email" href="mailto:bhardwajdesh@gmail.com"><i class="fas fa-envelope"> bhardwajdesh@gmail.com</i> </a>
-          <p class="address">
-            <i class="fas fa-address-card"> Am Steinberg 4, 13086 Berlin</i>
-            <br>
-            <i class="fas fa-mobile-alt"> +4917645936837</i>
-          </p>
-          <div class="social">
-            <a href="https://www.facebook.com/desh.yadav" class="fa fa-facebook"></a>
-            <a href="https://www.linkedin.com/in/desh-y-45237211/" class="fa fa-linkedin"></a>
-            <a href="https://www.xing.com/profile/Desh_Bhardwaj/cv?sc_o=mxb_p" class="fa fa-xing"></a>
-            <a href="https://github.com/yadavdesh" class="fa fa-github"></a>
-          </div> <!-- end of social media -->
-        </div> <!--end of contact info-->
+          <!-- google map embeded API
+          <iframe  class="google-API embed-responsive" width="80%" height="450" frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=Am+Steinberg+4,+13086+berlin%2C%20germany&key=AIzaSyAyuJb03v_Q9IW31QYzbXzqzFbzDVSxSj8" allowfullscreen></iframe>
+          -->
+          <!-- javascript MAP API -->
+          <div id="map"></div>
+
+        </div> <!--end of map-->
         <!-- Contact Form -->
-        <div class="col-sm-6>">
-          <form id="contact-form">
+        <div class="col-sm-6">
+          <form id="contact-form" class="responsive">
             <div class="form-group">
               <label for="name">Name</label>
               <input class="form-control" type="text" name="name" placeholder="Enter your Name" id="name" required>
@@ -376,7 +383,7 @@ facebook sdk and function
 
     <footer>
       <div class="youtube embed-responsive embed-responsive-16by9">
-        <iframe width="400" height="250"
+        <iframe width="80%" height="250"
           src="https://www.youtube.com/embed/UR_yCO7-aIU"
           frameborder="1" allow="autoplay; encrypted-media"
           allowfullscreen>
@@ -418,6 +425,8 @@ facebook sdk and function
     <!-- Can place script tags with JavaScriptfiles here -->
     <script src="js/scripts.js"></script>
     <script src="js/projects.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyuJb03v_Q9IW31QYzbXzqzFbzDVSxSj8&callback=initMap"
+type="text/javascript"></script>
 
   </body>
 </html>
