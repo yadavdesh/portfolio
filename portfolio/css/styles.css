@@ -1,0 +1,265 @@
+
+
+/* index.html css */
+*{
+  box-sizing:border-box;
+
+}
+
+body{
+  background-image: url("../img/background.jpg");
+  padding-top:50px 100px 100px 100px;
+  background-attachment:fixed;
+  background-size:cover;
+  color:blue;
+  position:relative;
+}
+
+.container-fluid{
+  margin-left:10%;
+  margin-right:10%;
+  width:80%;
+  padding-top:3em;
+}
+
+header{
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  font-size:2em;
+  margin-bottom:2em;
+  color:steelblue;
+  text-align:center;
+}
+
+.carousel-caption h1, p{
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  color:#0e0e0f;
+}
+
+.carousel-caption p{
+  font-size:1.5em;
+
+}
+
+#about{
+  margin-right:20px;
+}
+
+#about-img{
+  border-radius:100%;
+  width:40%;
+}
+
+
+/* about.css */
+
+.main-text{
+  padding-top:60px;
+  clear:both;
+  display:block;
+}
+
+h1,h2, h3 {
+  color:#0d3344;
+}
+
+.abount-intro{
+  padding:2em;
+}
+
+.about-intro p{
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  font-size:1em;
+  font-weight:100;
+  -webkit-margin-before:0;
+  float:left;
+}
+
+.about-skill h3{
+  text-align:center;
+  text-transform:uppercase;
+}
+
+.skills{
+  background-color:#276c8c;
+  margin-top:10px;
+  color:#FFF;
+  font-size:1em;
+
+}
+
+.about-story{
+  margin-top: 1em;
+}
+
+.about-story p{
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  font-size:1em;
+}
+
+.navbar-toggler{
+  text-decoration:none !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+}
+
+nav li a:hover{
+  color:#fc0 !important;
+  opacity:0.7 !important;
+  text-decoration:none !important;
+}
+
+.fa{
+  padding:5px;
+  font-size:30px;
+  width:60px;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+}
+
+.email{
+  font-size:1.2em;
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  padding:0;
+}
+
+.fa:hover{
+  opacity:0.7;
+}
+
+.fa-facebook{
+  background:#3B5998;
+}
+
+.fa-linkedin{
+  background:#0e76a8;
+  margin-left:5px;
+}
+
+.fa-xing{
+  background:#026466;
+  margin-left:5px;
+}
+
+.fa-github{
+  background:#4078c0;
+  color:white;
+  margin-left:5px;
+}
+
+@media(max-width:576px){
+  .form-group{
+    margin-top:30px;
+  }
+}
+
+/* FAQ page CSS*/
+.card-header{
+  background:#5AD4C2;
+}
+
+.card-header button{
+  color:#FFF;
+  font-size:25px;
+  text-decoration:none;
+  font-family:Futura, Helvetica, Arial, sans-serif;
+}
+
+.card-header button:hover{
+  text-decoration:none;
+}
+
+.card-header button:focus{
+  text-decoration:none;
+}
+
+.card-body{
+  font-size:19px;
+}
+
+@media(max-width:576px){
+  body{
+    background: #f48f42;
+  }
+}
+
+@media(max-width:576px){
+  .fa-angle-double-right{
+    font-size: 10px;
+  }
+}
+
+@media(min-width:768px){
+  .modal-button button{
+    float: right;
+  }
+}
+
+.work_img{
+  margin:0px;
+}
+
+.navbar-brand{
+  text-transform:uppercase;
+  padding:0 !important;
+  font-size:1em !important;
+}
+
+.content{
+  padding-top:70px;
+}
+
+/* modal box*/
+#deshcv{
+  height:500px;
+  width:100%;
+}
+
+.cv{
+  margin-top:1em;
+}
+
+/*footer*/
+.footer a:active{
+  color:#ff0000;
+}
+
+.footer a:visited{
+  color:#fc0;
+}
+
+.copy{
+  text-align:center;
+}
+
+footer{
+  margin-top:3em !important;
+}
+
+/* projects styling for js*/
+
+.work-description {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  color: #3a202c;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  text-align: center;
+  display: none;
+}
+
+.proj-title {
+  font-weight:100;
+}
+
+.work_img {
+  display: block;
+  margin: auto;
+  max-width: 200px;
+  position: relative;
+}
