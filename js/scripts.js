@@ -72,10 +72,10 @@ return false;
   //Projects section
   for(var i =0; i<projects.length; i++) {
     $('#work').append('\
-    <div class="col-md-3 work_img">\
-      <a href="'+projects_url[i]+'">\
-        <img src="'+projects[i]+'" alt="'+projects_name[i]+'" class="img-fluid">\
-        <p class="work-description">'+projects_name[i]+'</p>\
+    <div class="col-md-3">\
+      <a  class="work_img" href="'+projects[i].url+'" >\
+        <img src="'+projects[i].pic+'" alt="'+projects[i].title+'" class="img-fluid">\
+        <span class="work-description">'+projects[i].title+'</span>\
       </a>\
     </div>');
 
@@ -86,7 +86,18 @@ return false;
     else{
       $(images[i]).css("border", "2px solid steelblue");
     };
-};
+  };
+
+  //title appear on mouse hover
+  $('.work_img').mouseenter(function(){
+    $('.work-description',this).show();
+  }).mouseleave(function(){
+    $('.work-description', this).hide();
+  });
+
+
+
+
 
 
 
