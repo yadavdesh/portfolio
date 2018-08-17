@@ -263,3 +263,13 @@ footer{
   max-width: 200px;
   position: relative;
 }
+
+.carousel-caption{
+  position: absolute;
+  top: 15%;
+}
+
+#map {
+  height: 450px;
+  width: 100%;
+}

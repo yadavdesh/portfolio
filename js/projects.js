@@ -1,14 +1,3 @@
-/*
-var projects = [
-  "img/calculator.jpg",
-  "img/kitty.jpg",
-  "img/kitty.jpg",
-  "img/kitty.jpg"
-];
-*/
-
-
-
 
 var projects = [
   {
