@@ -18,6 +18,32 @@
   fjs.parentNode.insertBefore(js,fjs);}}
   (document, 'script', 'twitter-wjs'));
 
+//google map api function
+var map;
+var berlin = {lat: 52.5069296, lng: 13.1438622};
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center:berlin ,
+    zoom: 10
+  });
+
+  //map markers
+  var places = [
+  ['Home', 52.5565742, 13.4278529, 4],
+  ['Alexander Platz', 52.5219216, 13.4110207, 5],
+  ['Sony Center', 52.5098475, 13.3713085, 3]
+];
+
+
+  for (var i = 0; i < places.length; i++) {
+      var place = places[i];
+      var marker = new google.maps.Marker({
+        position: {lat: place[1], lng: place[2]},
+        map: map,
+        title: place[0],
+      });
+    }
+}
 
 
 $(document).ready(function(){
@@ -94,9 +120,6 @@ return false;
   }).mouseleave(function(){
     $('.work-description', this).hide();
   });
-
-
-
 
 
 
