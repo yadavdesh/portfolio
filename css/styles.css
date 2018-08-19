@@ -237,6 +237,10 @@ footer{
   margin-top:3em !important;
 }
 
+.jumbotron{
+  background-color: #343a40;
+}
+
 /* projects styling for js*/
 
 .work-description {
@@ -272,4 +276,10 @@ footer{
 #map {
   height: 450px;
   width: 100%;
+}
+
+/*facebook like number text*/
+
+#u_0_5{
+  color:#ffffff;
 }
